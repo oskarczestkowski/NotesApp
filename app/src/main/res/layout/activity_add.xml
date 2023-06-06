@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:padding="15dp"
+    android:background="@color/Shade1">
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/title"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:paddingBottom="30dp"
+            android:textColor="@color/Shade4"
+            android:textColorHint="@color/Shade2"
+            android:background="@android:color/transparent"
+            android:hint="Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_marginTop="5dp"
+            android:textSize="23dp"
+            android:textColor="@color/Shade4"
+            android:textColorHint="@color/Shade2"
+            android:background="@android:color/transparent"
+            android:hint="description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveNote"
+        android:src="@drawable/save_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

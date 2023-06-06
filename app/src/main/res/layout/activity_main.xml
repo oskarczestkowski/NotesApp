@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Shade1"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/searchBar"
+        android:padding="15dp"
+        android:textColorHint="@color/Shade2"
+        android:textColor="@color/Shade4"
+        android:background="@android:color/transparent"
+        android:hint="Search..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <View
+        android:background="@color/Shade1"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notes_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Shade1"
+            tools:listitem="@layout/notes_tow" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingADDbtn"
+        android:src="@drawable/add_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>
